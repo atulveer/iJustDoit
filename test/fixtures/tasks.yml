@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  done: false
+  start_on: 2009-10-08 13:31:14
+  end_on: 2009-10-08 13:31:14
+  remind_days_ago: 1
+  priority: MyString
+  category_id: 
+  description: MyString
+
+two:
+  name: MyString
+  done: false
+  start_on: 2009-10-08 13:31:14
+  end_on: 2009-10-08 13:31:14
+  remind_days_ago: 1
+  priority: MyString
+  category_id: 
+  description: MyString

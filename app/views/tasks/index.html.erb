@@ -1,0 +1,27 @@
+<div>
+		<div id="left_col">
+	    <%= render :partial => 'useful_links' %>
+		</div>
+
+		<div id="middle_col">
+			<% if @tasks.size > 0%>
+	           <%= render :partial => 'pending_tasks' %>
+	         <%else%>
+	           <div style="padding-top:17px;font-size:11px;"> 
+		         Great! you dont have any pending tasks! It's time to create new task :)
+		        </div>
+	         <%end%>
+		</div>
+
+		<div id="right_col">
+			
+		</div>
+</div>
+
+
+
+
+
+
+
+

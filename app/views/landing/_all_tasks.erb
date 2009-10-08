@@ -1,0 +1,8 @@
+<div id="all_tasks">
+	<h3>To Dos by Users</h3>
+	<ul>
+	<%for task in @tasks%>
+	  <li><%= task.name %>, by <%= task.user.name%></li>
+	<%end%>
+	</ul>
+</div>

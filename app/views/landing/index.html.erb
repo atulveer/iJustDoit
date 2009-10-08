@@ -1,0 +1,17 @@
+<div>
+		<div id="left_col">
+	    <%= render :partial => 'about' %>
+		</div>
+
+		<div id="middle_col">
+	    <%= render :partial => 'all_tasks' %>
+		</div>
+
+		<div id="right_col">
+			 <% unless logged_in? %>
+                <%= render :partial => 'sessions/login' %>
+             <%else%>
+                   <%= render :partial => 'all_users' %>
+              <%end%>   
+		</div>
+</div>
