@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.xml
   def index
-    @tasks = Task.find :all , :conditions => ['user_id = ? and done = ?', @current_user.id.to_i,0] ,:order => 'priority ASC'
+    @tasks = Task.find :all , :conditions => ['user_id = ? and done = ?', @current_user.id.to_i,false] ,:order => 'priority ASC'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -91,7 +91,7 @@ class TasksController < ApplicationController
   end
   
   def done_tasks
-     @tasks = Task.find :all , :conditions => ['user_id = ? and done = ?', @current_user.id.to_i,1] ,:order => 'priority ASC'
+     @tasks = Task.find :all , :conditions => ['user_id = ? and done = ?', @current_user.id.to_i,true] ,:order => 'priority ASC'
 
       respond_to do |format|
         format.html # index.html.erb
