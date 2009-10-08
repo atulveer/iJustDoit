@@ -25,11 +25,16 @@
   </p>
   <p>
     <%= f.label :priority %><br />
-    <%= f.text_field :priority %>
+    <%= f.select :priority, priority_options %>
   </p>
   <p>
-    <%= f.label :category_id %><br />
-    <%= f.text_field :category_id %>
+
+   <%= f.label :category_id %><br />
+    <select name = "task[category_id]">
+	  <% for category in @categories%>
+	     <option value="<%= category.id%>"><%= category.name%></option>
+	  <%end%>
+	</select>
   </p>
   <p>
     <%= f.label :description %><br />
