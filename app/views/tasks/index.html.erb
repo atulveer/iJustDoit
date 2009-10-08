@@ -8,7 +8,7 @@
 	           <%= render :partial => 'pending_tasks' %>
 	         <%else%>
 	           <div style="padding-top:17px;font-size:11px;"> 
-		         Great! you dont have any pending tasks! It's time to create new task :)
+		         Great! you dont have any pending tasks! It's time to <%= link_to 'create new task :) ', new_task_path %>
 		        </div>
 	         <%end%>
 		</div>
